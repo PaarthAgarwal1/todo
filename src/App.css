@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4A90E2;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* TodoApp Styles */
+.todo-app {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.todo-app h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 {
+    color: #666;
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.todo-app p {
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+/* Add Todo Button */
+.add-todo-btn {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-todo-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Input Styles */
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Save/Cancel Buttons */
+.save-btn {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cancel-btn {
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.cancel-btn:hover {
+    background-color: #C0392B;
+}
+
+/* Todo List Items */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Remove Button (Cross Icon) */
+.todo-item button {
+    background: none;
+    border: none;
+    color: #E74C3C;
+    transition: color 0.2s ease;
+}
+
+.todo-item button:hover {
+    color: #C0392B;
+    background-color: transparent; /* Ensure no background color */
+}
+
+/* Checkbox Icon */
+.todo-item .checkbox-icon {
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.todo-item .checkbox-icon:hover {
+    color: #333;
+    background-color: transparent; /* Ensure no background color */
+}
+
+.todo-item p {
+    color: #555;
+    margin: 0;
+}
+
+.todo-item .checked {
+    text-decoration: line-through;
+    color: #bbb;
+}
