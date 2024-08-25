@@ -1,6 +1,4 @@
-Based on the details you've provided, here's a draft for your README file:
 
----
 
 # Todo Webapp
 
